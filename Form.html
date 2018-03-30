@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Формы</title>
+</head>
+<body>
+<form action="formdata.php" method="POST" neme="form1">
+<fieldset><legend>Ввод личных данных</legend>
+<p><label>Введите Ваше имя (Макс. 10 символов):<input type="text"  name="name" size="30" maxlength="10"></label></p>
+<p><label>Введите Ваш пароль (Макс. 10 символов):<input type="password" name="password" size="30" maxlength="10"></label></p>
+</fieldset>
+<fieldset><legend>Вопроы</legend>
+<p>Играете в игры?</p>
+<p><label> ДА <input type="radio" name="time" value="yes"> </label> <label> Нет <input type="radio" name="time" value="no"> </label> </p>
+<p>Зачем оно вам?</p>
+<p><label><input type="checkbox" name="DR">Для работы </label>
+<label><input type="checkbox" name="DY">Для учобы </label>
+<label><input type="checkbox" name="DD">Для дела </label></p>
+<p>Сколько часов вы спите?</p>
+<p><select name="sleep">
+<option>3</option>
+<option>4</option>
+<option value="six">6</option>
+<option selected value="eight">8</option>
+<option>24/7</option>
+</select></p>
+</fieldset>
+<p><label for="text">Расскажите о собе:</label></p>
+<p><textarea name="text" cols="40" rows="5" id="text">Здесь...</textarea></p>
+<p><input type="reset" name="reset" value="Очистить"> <input type="submit" name="submit" value="Отправить"></p>
+<p><input type="image" src="images/ibutton.png"name="imagesibutton"></p>
+<p><input type="button" name="button" value="Кнопка"></p>
+</form>
+</body>
+</html>
